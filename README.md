@@ -1,6 +1,6 @@
 # node-nma
 
-A Node.js library and CLI tool to send notifications via Notify My Android
+A Node.js library and CLI tool to send notifications via Notify My Android. This is a fork of Randall Gordon's [node-nma](https://github.com/randallgordon/node-nma). It provides the same functionality with a slightly different API. Callbacks are now handled by the promise returned by `nma`. Because of this breaking change, I've created a new npm package: [nma-promise][npm-url]. It's version number reflects node-nma's ancestry.
 
 [![npm Version][npm-image]][npm-url] [![npm Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url] [![Open Issues][issues-image]][issues-url]
 
@@ -8,12 +8,12 @@ A Node.js library and CLI tool to send notifications via Notify My Android
 
 If you want to use the CLI tool, Use the `-g` flag to install globally.
 
-    $ npm install [-g] nma
+    $ npm install [-g] nma-promise
 
 ## Code Example
 
 ```javascript
-var nma = require("nma");
+var nma = require("nma-promise");
 
 nma({
   "apikey": "02cfc1a5f4e567929c31c13953e1adef247118562f148f7a",
@@ -23,8 +23,18 @@ nma({
   "priority": 0, // Priority
   "url": "http://www.somewebsite.com/",
   "content-type": "text/plain"
-}, callback);
+}).then(resolved_fn).catch(rejected_fn);
 ```
+If the notification goes through without error `resolved_fn` will be called and receive an array of:
+
+- Notify My Android's response object and
+- the body of Notify My Android's response
+
+In case of an error `rejected_fn` will be called and receive an array of:
+
+- the `Error` encountered and 
+- Notify My Android's response object and
+- the body of Notify My Android's response
 
 Also, `apikey` can be a list of comma separated keys if you're using multiple keys.
 
