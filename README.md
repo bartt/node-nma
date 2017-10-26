@@ -1,8 +1,8 @@
 # node-nma
 
-A Node.js library and CLI tool to send notifications via Notify My Android 
+A Node.js library and CLI tool to send notifications via Notify My Android
 
-[![npm Version][npm-image]][npm-url] [![npm Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url] [![Documentation Status][rtd-image]][rtd-url] [![Open Issues][issues-image]][issues-url] [![Stories in Ready][waffle-image]][waffle-url]
+[![npm Version][npm-image]][npm-url] [![npm Downloads][downloads-image]][downloads-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][david-image]][david-url] [![Open Issues][issues-image]][issues-url]
 
 ## Installation
 
@@ -52,30 +52,19 @@ Options:
   -c, --content-type [type]  Set to "text/html" and basic html will be rendered while displaying the notification
 ```
 
-## TODO
-
- - Input validation
- - Constructor to setup some defaults (apikey, application, content-type) 
- - Verbose output
- - ??? - Feel free to open an Issue or submit a Pull Request!
-
 ## License
 
 MIT
 
-[npm-image]: http://img.shields.io/npm/v/nma.svg
-[npm-url]: http://npm.im/nma
-[downloads-image]: http://img.shields.io/npm/dm/nma.svg
-[downloads-url]: http://npm.im/nma
-[travis-image]: https://secure.travis-ci.org/randallagordon/node-nma.png
-[travis-url]: http://travis-ci.org/randallagordon/node-nma
-[coveralls-image]: https://img.shields.io/coveralls/randallagordon/node-nma.svg
-[coveralls-url]: https://coveralls.io/r/randallagordon/node-nma
-[david-image]: https://david-dm.org/randallagordon/node-nma.png
-[david-url]: https://david-dm.org/randallagordon/node-nma
-[rtd-image]: https://readthedocs.org/projects/node-nma/badge/?version=stable
-[rtd-url]: https://readthedocs.org/projects/node-nma/?badge=stable
-[issues-image]: http://img.shields.io/github/issues/randallagordon/node-nma.svg
-[issues-url]: https://github.com/randallagordon/node-nma/issues
-[waffle-image]: https://badge.waffle.io/randallagordon/node-nma.png?label=ready&title=Ready
-[waffle-url]: https://waffle.io/randallagordon/node-nma
+[npm-image]: http://img.shields.io/npm/v/nma-promise.svg
+[npm-url]: http://npm.im/nma-promise
+[downloads-image]: http://img.shields.io/npm/dm/nma-promise.svg
+[downloads-url]: http://npm.im/nma-promise
+[travis-image]: https://secure.travis-ci.org/bartt/node-nma.png
+[travis-url]: http://travis-ci.org/bartt/node-nma
+[coveralls-image]: https://img.shields.io/coveralls/bartt/node-nma.svg
+[coveralls-url]: https://coveralls.io/r/bartt/node-nma
+[david-image]: https://david-dm.org/bartt/node-nma.png
+[david-url]: https://david-dm.org/bartt/node-nma
+[issues-image]: http://img.shields.io/github/issues/bartt/node-nma.svg
+[issues-url]: https://github.com/bartt/node-nma/issues

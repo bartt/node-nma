@@ -1,11 +1,15 @@
 {
-  "name": "nma",
+  "name": "nma-promise",
   "description": "Notify My Android library with CLI goodness",
-  "version": "0.2.2",
-  "homepage": "https://github.com/randallagordon/node-nma",
+  "version": "0.3.0",
+  "homepage": "https://github.com/bartt/node-nma",
   "license": "MIT",
-  "author": "Randall A. Gordon <randall@randallagordon.com> (http://randallagordon.com/)",
+  "author": "Bart Teeuwisse <bart@thecodemill.biz> (https://thecodemill.biz/)",
   "contributors": [
+    {
+      "name": "Randall A. Gordon",
+      "email": "randall@randallagordon.com"
+    },
     {
       "name": "Jesse Keane",
       "email": "<me@jessekeane.me>"
@@ -13,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/randallagordon/node-nma.git"
+    "url": "git://github.com/bartt/node-nma.git"
   },
   "keywords": [
     "notification",
@@ -27,7 +31,7 @@
   },
   "dependencies": {
     "commander": "^2.5.0",
-    "request": "^2.46.0"
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
