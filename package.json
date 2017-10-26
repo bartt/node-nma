@@ -30,7 +30,8 @@
     "request": "^2.46.0"
   },
   "devDependencies": {
-    "chai": "^1.9.2",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "coveralls": "^2.11.2",
     "hoek": "^2.6.0",
     "jscs": "^1.7.1",
@@ -45,8 +46,8 @@
   "scripts": {
     "lint": "jshint lib bin/nma test",
     "style": "jscs lib bin/nma test",
-    "test": "lab -t 100",
-    "test-coveralls": "npm test && lab -t 100 -r lcov | coveralls",
+    "test": "lab -l -t 94",
+    "test-coveralls": "npm test && lab -t 94 -r lcov | coveralls",
     "ci": "npm run lint && npm run style && npm run test-coveralls"
   }
 }
