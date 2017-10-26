@@ -1,7 +1,7 @@
 {
   "name": "nma-promise",
   "description": "Notify My Android library with CLI goodness",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/bartt/node-nma",
   "license": "MIT",
   "author": "Bart Teeuwisse <bart@thecodemill.biz> (https://thecodemill.biz/)",
